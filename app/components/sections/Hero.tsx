@@ -112,7 +112,7 @@ const Hero = () => {
             </div>
             <div className="clients-section">
               <p className="clients-text">
-                Trusted by data teams at world's leading companies
+                Trusted by data teams at world&apos;s leading companies
               </p>
               <div className="client-logos">
                 <img

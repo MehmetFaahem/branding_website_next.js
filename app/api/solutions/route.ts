@@ -6,7 +6,7 @@ export async function GET() {
       id: 1,
       title: "INSPECTO",
       description:
-        "Transform field operations with Inspecto's comprehensive inspection management. Ensure compliance, streamline processes, and drive efficiency with smart data collection and AI-powered analytics tailored for diverse industries.",
+        "Transform field operations with Inspecto&apos;s comprehensive inspection management. Ensure compliance, streamline processes, and drive efficiency with smart data collection and AI-powered analytics tailored for diverse industries.",
       imageUrl: "/assets/inspecto-preview.png",
       ctaText: "Learn More",
       ctaIcon:
@@ -16,7 +16,7 @@ export async function GET() {
       id: 2,
       title: "ANALYTICA",
       description:
-        "Harness the power of data with Analytica's advanced analytics platform. Turn complex data into actionable insights with our AI-driven analytics solution designed for modern businesses.",
+        "Harness the power of data with Analytica&apos;s advanced analytics platform. Turn complex data into actionable insights with our AI-driven analytics solution designed for modern businesses.",
       imageUrl: "/assets/analytica-preview.png",
       ctaText: "Learn More",
       ctaIcon:

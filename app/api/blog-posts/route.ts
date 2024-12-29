@@ -6,7 +6,7 @@ export async function GET() {
       id: 1,
       date: "20 July",
       title:
-        "DALL·E 3 and Midjourney Fail Astral Codex Ten's Image Generation Bet",
+        "DALL·E 3 and Midjourney Fail Astral Codex Ten&apos;s Image Generation Bet",
       imageUrl:
         "https://cdn.builder.io/api/v1/image/assets/TEMP/17ac1ee0ddd5ed8864fba572394f7f426b38051d741976a9c3689d6b66308718",
       imageAlt: "DALL·E 3 and Midjourney AI image generation comparison",
