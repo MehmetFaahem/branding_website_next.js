@@ -16,6 +16,13 @@
   height: 400px;
   transition: transform 0.3s ease;
 }
+
+@media (min-width: 1870px) {
+  .step-card {
+    height: auto;
+  }
+}
+
 .step-card:hover {
   transform: translateY(-5px);
 }
