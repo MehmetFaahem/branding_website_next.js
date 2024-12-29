@@ -1,0 +1,207 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 200px 5% 50px;
+  max-width: 1360px;
+  margin: 0 auto;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  list-style-type: none;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.company-logo {
+  width: 173px;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.company-logo:hover {
+  opacity: 0.9;
+}
+
+.company-address {
+  margin-top: 40px;
+  opacity: 0.7;
+}
+
+.company-phone {
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
+.copyright-text {
+  margin-top: 57px;
+  opacity: 0.7;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.offerings-section,
+.solutions-section,
+.company-section,
+.social-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.offerings-list,
+.solutions-list,
+.company-links,
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.list-item {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  opacity: 1;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+  opacity: 1;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1220px) {
+  .footer-container {
+    padding: 150px 5% 40px;
+    gap: 30px;
+  }
+
+  .company-logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 100px 20px 40px;
+    gap: 40px;
+  }
+
+  .company-info {
+    grid-column: 1 / -1;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .offerings-list,
+  .solutions-list,
+  .company-links,
+  .social-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 80px 15px 30px;
+    gap: 30px;
+  }
+
+  .company-info {
+    margin-bottom: 20px;
+  }
+
+  .company-address,
+  .company-phone {
+    margin-top: 20px;
+  }
+
+  .copyright-text {
+    margin-top: 40px;
+  }
+
+  .section-title {
+    margin-bottom: 25px;
+    font-size: 13px;
+  }
+
+  .offerings-list,
+  .solutions-list,
+  .company-links,
+  .social-links {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 60px 15px 30px;
+    gap: 40px;
+  }
+
+  .company-info {
+    margin-bottom: 0;
+  }
+
+  .company-logo {
+    width: 130px;
+  }
+
+  .offerings-section,
+  .solutions-section,
+  .company-section,
+  .social-section {
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .offerings-list,
+  .solutions-list,
+  .company-links,
+  .social-links {
+    align-items: center;
+    gap: 12px;
+  }
+
+  .social-link {
+    justify-content: center;
+  }
+}
