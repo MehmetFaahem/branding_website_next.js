@@ -10,17 +10,6 @@ interface Context {
   b: CanvasRenderingContext2D;
 }
 
-interface CircleProps {
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  life: number;
-  ttl: number;
-  radius: number;
-  hue: number;
-}
-
 const CONSTANTS = {
   circleCount: 150,
   circlePropCount: 8,
@@ -37,11 +26,10 @@ const CONSTANTS = {
   backgroundColor: "hsla(0,0%,5%,1)",
 } as const;
 
-const { PI, cos, sin, abs, sqrt, pow, random, atan2 } = Math;
-const HALF_PI = 0.5 * PI;
+const { PI, cos, sin, abs, random } = Math;
+
 const TAU = 2 * PI;
 const rand = (n: number) => n * random();
-const randIn = (min: number, max: number) => rand(max - min) + min;
 const fadeInOut = (t: number, m: number) => {
   const hm = 0.5 * m;
   return abs(((t + hm) % m) - hm) / hm;
@@ -174,7 +162,9 @@ function updateCircle(i: number) {
   circleProps[i2] = y + vy;
   circleProps[i5] = life + 1;
 
-  (checkBounds(x, y, radius) || life > ttl) && initCircle(i);
+  if (checkBounds(x, y, radius) || life > ttl) {
+    initCircle(i);
+  }
 }
 
 function drawCircle(
