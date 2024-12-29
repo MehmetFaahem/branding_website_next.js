@@ -8,6 +8,38 @@
   margin-top: 40px;
 }
 
+.narratives-content-header::before {
+  content: "Our Offerings";
+  position: absolute;
+  top: 50px;
+  left: -100px;
+  color: #ffffff;
+  font-size: 12px;
+  z-index: 999;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  rotate: -90deg;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 7px;
+}
+
+@media (max-width: 1520px) {
+  .narratives-content-header::before {
+    content: "Our Offerings";
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    color: #ffffff;
+    font-size: 12px;
+    z-index: 999;
+    font-weight: 500;
+    font-family: Montserrat, sans-serif;
+    rotate: -90deg;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 7px;
+  }
+}
+
 .dev-hero-container {
   display: flex;
   flex-direction: column;

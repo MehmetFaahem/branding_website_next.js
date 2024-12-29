@@ -41,9 +41,9 @@ const CaseStudies = () => {
     <div className="vertical-line-container">
       <div className="narratives-content-header">
         <div className="section-heading">
-          Success
+          Impact-Driven
           <br />
-          Stories
+          Narratives
         </div>
         <div className="navigation-controls">
           <img
